@@ -8,15 +8,15 @@ st.image("tempoo.jpeg", caption="RODRIGO SÁNCHEZ ACOSTA - A1615173 : Esta app e
 st.header('ASPECTOS A CONSIDERAR')
 
 def user_input_features():
-  city = st.number_input( "Ciudad (0 = Acapulco, 1 = Aguascalientes, 2 = Acuña):",  min_value=0, max_value=2, value=0, step=1)
-  year = st.number_input("Año:",min_value=1800, max_value=2050, value=1900, step=1)
-  month = st.number_input("Mes (1 a 12):",min_value=1, max_value=12, value=1, step=1)
+  City = st.number_input( "Ciudad (0 = Acapulco, 1 = Aguascalientes, 2 = Acuña):",  min_value=0, max_value=2, value=0, step=1)
+  Year = st.number_input("Año:",min_value=1800, max_value=2050, value=1900, step=1)
+  Month = st.number_input("Mes (1 a 12):",min_value=1, max_value=12, value=1, step=1)
   
 
 
-  user_input_data = { "city": city,
-                      "year": year,
-                      "month": month
+  user_input_data = { "City": City,
+                      "Year": Year,
+                      "Month": Month
                      }
 
   features = pd.DataFrame(user_input_data, index=[0])
