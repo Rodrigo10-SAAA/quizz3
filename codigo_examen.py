@@ -26,7 +26,7 @@ def user_input_features():
 df = user_input_features()
 
 datos =  pd.read_csv('quizz3.csv', encoding='latin-1')
-X = datos["City", "Year", "Month"]
+X = datos[["City", "Year", "Month"]]
 y = datos["AverageTemperature"]
 
 from sklearn.model_selection import train_test_split
